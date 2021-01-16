@@ -1,7 +1,7 @@
 {
   "configurations": [{
     "name": "x86-Debug",
-    "generator": "Visual Studio 15 2017",
+    "generator": "Visual Code",
     "configurationType" : "Debug",
     "buildRoot":  "${env.LOCALAPPDATA}\\CMakeBuild\\${workspaceHash}\\build\\${name}",
     "cmakeCommandArgs": "",
