@@ -1,11 +1,4 @@
 #!/bin/bash
-###
- # @Author: q1lon<keyron.zhang@gmail.com>
- # @Date: 2021-01-17 23:03:13
- # @LastEditTime: 2021-01-17 23:13:16
- # @FilePath: /sqlite-test/run_test.sh
-### 
-
 #Ubuntu支持同时安装多个版本的clang。
 #测试需要在调用cmake之前确定clang二进制文件
 #这个脚本找到具体clang编译器路径，并配置cmake使用clang编译器
@@ -13,8 +6,8 @@
 if [ -z $clang_bin ]; then
     # clang_ver=`dpkg --get-selections | grep clang | grep -v -m1 libclang | cut -f1 | cut -d '-' -f2`
     clang_ver="1200.0.32.28"
-    clang_bin="clang-$clang_ver" #把版本号存到变量，把版本号添加到clangC编译器和clang编译器
-    clang_xx_bin="clang++-$clang_ver"
+    # clang_bin="clang-$clang_ver" #把版本号存到变量，把版本号添加到clangC编译器和clang编译器
+    # clang_xx_bin="clang++-$clang_ver"
 fi
 
 echo "Will use clang [$clang_bin] and clang++ [$clang_xx_bin]"

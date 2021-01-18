@@ -4,7 +4,8 @@
 
 
 #ROOT_DIR=`pwd`#shell脚本的语法，pwd输出文件当前所在路径,赋值给ROOT_DIR这个变量
-dir="01-basic/I-compiling-with-clang"
+# dir="01-basic/I-compiling-with-clang"
+dir="";
 if [ -d "$ROOT_DIR/$dir/build.clang" ]; then
     echo "deleting $dir/build.clang"
     rm -r $dir/build.clang

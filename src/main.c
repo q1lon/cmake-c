@@ -1,12 +1,13 @@
 /*
  * @Author: q1lon<keyron.zhang@gmail.com>
  * @Date: 2021-01-14 10:10:13
- * @LastEditTime: 2021-01-16 18:38:42
+ * @LastEditTime: 2021-01-18 13:16:39
  * @FilePath: /sqlite-test/src/main.c
  */
 #include <stdio.h>
 #include <sqlite3.h>
 #include "static/hello.h"
+#include "shared/frist.h"
 
 static int callback(void *NotUsed, int argc, char **argv, char **azColName)
 {
@@ -47,5 +48,6 @@ int main(int argc, char **argv)
 //     return 0;
 
     test_print('l');
+    test_print('z');
     return 0;
 }
