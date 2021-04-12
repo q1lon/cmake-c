@@ -9,3 +9,6 @@
 ~~~
 > sudo ./run_test.sh //执行脚本
 ~~~
+### 参考
+cmake配置
+https://sfumecjf.github.io/cmake-examples-Chinese/
