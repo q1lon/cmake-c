@@ -8,6 +8,9 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+.vscode/
+.idea/
+cmake-build-debug/
 _deps
 # build
 /build
@@ -64,4 +67,3 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-.vscode

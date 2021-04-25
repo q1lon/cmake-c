@@ -1,3 +1,5 @@
+# Cmake
+
 ### 使用cmake直接构建makefile
 ~~~
 > mkdir -p build && cd build && cmake .. //使用本地 CmakeLists.txt内容构建makefile
@@ -9,6 +11,6 @@
 ~~~
 > sudo ./run_test.sh //执行脚本
 ~~~
-### 参考
-cmake配置
+
+### 参考 
 https://sfumecjf.github.io/cmake-examples-Chinese/
