@@ -5,6 +5,7 @@
 
 if [ -z $clang_bin ]; then
     # clang_ver=`dpkg --get-selections | grep clang | grep -v -m1 libclang | cut -f1 | cut -d '-' -f2`
+    # shellcheck disable=SC2034
     clang_ver="1200.0.32.28"
     # clang_bin="clang-$clang_ver" #把版本号存到变量，把版本号添加到clangC编译器和clang编译器
     # clang_xx_bin="clang++-$clang_ver"
