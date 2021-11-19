@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <sqlite3.h>
 #include "static/hello.h"
-#include "shared/frist.h"
+#include "shared/first.h"
 
 static int callback(void *NotUsed, int argc, char **argv, char **azColName) {
     int i;

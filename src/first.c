@@ -6,7 +6,7 @@
  */
 #include <stdio.h>
 
-#include "shared/frist.h"
+#include "shared/first.h"
 
 void test_print(char t) {
     printf("frist输出:%c", t);
