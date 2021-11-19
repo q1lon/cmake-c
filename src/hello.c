@@ -8,6 +8,6 @@
 
 #include "static/hello.h"
 
-void test_print(char t){
-    printf("hello输出:%c",t);
+void test_print(char t) {
+    printf("hello输出:%c", t);
 }

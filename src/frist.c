@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 #include "shared/frist.h"
- 
-void test_print(char t){
-    printf("frist输出:%c",t);
+
+void test_print(char t) {
+    printf("frist输出:%c", t);
 }

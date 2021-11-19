@@ -9,19 +9,16 @@
 #include "static/hello.h"
 #include "shared/frist.h"
 
-static int callback(void *NotUsed, int argc, char **argv, char **azColName)
-{
+static int callback(void *NotUsed, int argc, char **argv, char **azColName) {
     int i;
-    for (i = 0; i < argc; i++)
-    {
+    for (i = 0; i < argc; i++) {
         printf("%s = %s\n", azColName[i], argv[i] ? argv[i] : "NULL");
     }
     printf("\n");
     return 0;
 }
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
 //     sqlite3 *db;
 //     char *zErrMsg = 0;
 //     int rc;
