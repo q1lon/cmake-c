@@ -3,20 +3,20 @@ cmake_minimum_required(VERSION 3.0)
 # set(CMAKE_TOOLCHAIN_FILE ${CMAKE_CURRENT_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake
 # CACHE STRING "Vcpkg toolchain file")
 set(CMAKE_TOOLCHAIN_FILE /Users/zhangqilong/Desktop/git/vcpkg/scripts/buildsystems/vcpkg.cmake
-  CACHE STRING "Vcpkg toolchain file")
+        CACHE STRING "Vcpkg toolchain file")
 project(test)
 
 #如果没有指定则设置默认编译方式
-if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
-  #在命令行中输出message里的信息
-  message("Setting build type to 'RelWithDebInfo' as none was specified.")
-  #不管CACHE里有没有设置过CMAKE_BUILD_TYPE这个变量，都强制赋值这个值为RelWithDebInfo
-  set(CMAKE_BUILD_TYPE RelWithDebInfo CACHE STRING "Choose the type of build." FORCE)
+if (NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
+    #在命令行中输出message里的信息
+    message("Setting build type to 'RelWithDebInfo' as none was specified.")
+    #不管CACHE里有没有设置过CMAKE_BUILD_TYPE这个变量，都强制赋值这个值为RelWithDebInfo
+    set(CMAKE_BUILD_TYPE RelWithDebInfo CACHE STRING "Choose the type of build." FORCE)
 
-  # 当使用cmake-gui的时候，设置构建级别的四个可选项
-  set_property(CACHE CMAKE_BUILD_TYPE PROPERTY STRINGS "Debug" "Release"
-    "MinSizeRel" "RelWithDebInfo")
-endif()
+    # 当使用cmake-gui的时候，设置构建级别的四个可选项
+    set_property(CACHE CMAKE_BUILD_TYPE PROPERTY STRINGS "Debug" "Release"
+            "MinSizeRel" "RelWithDebInfo")
+endif ()
 
 
 ############################################################
@@ -32,10 +32,10 @@ add_library(frist::library ALIAS frist_library)
 set(SOURCES src/main.c)
 
 find_package(unofficial-sqlite3 CONFIG REQUIRED)
- 
+
 add_executable(${PROJECT_NAME} ${SOURCES})
 #这个目录是库所包含的头文件的目录，并设置库属性为PUBLIC。
-target_include_directories(hello_library PUBLIC ${PROJECT_SOURCE_DIR}/include )
+target_include_directories(hello_library PUBLIC ${PROJECT_SOURCE_DIR}/include)
 target_include_directories(frist_library PUBLIC ${PROJECT_SOURCE_DIR}/include)
 #设置这个可执行文件headers需要包含的库的路径
 target_include_directories(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/include)
